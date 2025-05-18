@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'UrbanistRegular';
+    src: url(fonts/Urbanist-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'UrbanistBold';
+    src: url(fonts/Urbanist-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'UrbanistMedium';
+    src: url(fonts/Urbanist-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'UrbanistsemiBold';
+    src: url(fonts/Urbanist-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'UrbanistsemiBoldItalic';
+    src: url(fonts/Urbanist-SemiBoldItalic.ttf) format('truetype');
+}
+
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+}
+
+#hero-section img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#hero-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
