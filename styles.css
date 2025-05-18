@@ -19,6 +19,9 @@
     src: url(fonts/Urbanist-SemiBoldItalic.ttf) format('truetype');
 }
 
+main{
+    background-color: #FFF2E2;
+}
 
 #hero-section{
     width: 100%;
@@ -37,4 +40,127 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+/* fremhævede vine*/
+
+#highlighted-vine{
+    text-align: center;
+    margin-top: 5rem;
+    width: 100%;
+  }
+  
+  #highlighted-vine h2 {
+    font-size: 2em;
+    font-family: 'UrbanistMedium';
+    color: #46320b;
+  }
+  
+  #vin-kort-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .vin-kort{
+    border-style: solid;
+    border-width: 30px;
+    border-color: #457E33;
+  }
+  .vin-kort img, .vin-kort2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.vin-kort2{
+    border-style: solid;
+    border-width: 30px;
+    border-color: #6AAA57;
+}
+
+/*boarder afsnit*/
+
+#forside-vingaard-baggrund{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 6rem;
+
+    background-color: #46320b;
+    border-radius: 20rem 0rem 20rem 0rem;
+}
+
+.forside-border{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 6rem;
+}
+
+.info-tekst{
+    color: #FFF2E2;
+    font-family: 'UrbanistRegular';
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 2rem;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-tekst h2{
+    text-align: left;
+    align-self: start;
+}
+
+.forside-border div{
+    display: flex;
+    width: 40%;
+}
+.forside-border div img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info-tekst div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.knap1{
+    background-color: #D194FF;
+    color: #000000;
+    font-size: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 4rem;
+    
+    display: flex;
+    justify-content: center;
+    transform: scale(1);
+}
+.knap1:hover{
+    background-color: #AB3DFF;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.knap1 a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'UrbanistRegular';
+    font-size: 1.3rem;
 }
