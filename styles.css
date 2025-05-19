@@ -19,9 +19,50 @@
     src: url(fonts/Urbanist-SemiBoldItalic.ttf) format('truetype');
 }
 
-main{
+body{
     background-color: #FFF2E2;
 }
+
+h1{
+    font-family: 'UrbanistSemiBold';
+    font-size: 3.5rem;
+}
+#overskrift, #overskrift2{
+    color:#50320C;
+    padding-top: 10rem;
+    text-align: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+#overskrift h2{
+    font-family: 'UrbanistMedium';
+    font-size: 2.5rem;
+    color: #50320C;
+}
+
+.tiltoppen{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 9;
+    background-color: #457E33;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tiltoppen a{
+    color: #FFF2E2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+}
+
 
 #hero-section{
     width: 100%;
@@ -279,3 +320,4 @@ main{
     color: #50320C;
     text-align: center;
 }
+

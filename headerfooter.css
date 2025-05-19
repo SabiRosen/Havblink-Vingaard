@@ -43,11 +43,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     position: relative;
+    line-height: 2rem;
 }
 
 nav a {
     text-decoration: none;
-    padding: 28px;
+    padding: 24px;
     display: block;
     color: #50320C;
     font-family: 'UrbanistSemiBold';
@@ -91,7 +92,7 @@ footer{
     right: 0;
     padding-left: 5rem;
     padding-right: 5rem;
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     color:#50320C;
     z-index: 8;

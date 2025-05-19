@@ -1,0 +1,60 @@
+.vin-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 6rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.vin-container div{
+    width: 50%;
+}
+.vin-container div img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10rem 0rem 10rem 0rem;
+}
+
+.vin-container section{
+    width: 50%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.vin-container section img{
+    width: 70%;
+    object-fit: cover;
+}
+
+.vin-container section h2{
+    font-family: 'Urbanistmedium';
+    color: #50320C;
+    font-size: 2.5rem;
+}
+
+.vin-container section p{
+    font-family: 'UrbanistRegular';
+    color: #50320C;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.6rem;
+}
+
+.vin-container section a{
+    font-family: 'UrbanistBold';
+    color: #50320C;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
