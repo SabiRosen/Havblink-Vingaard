@@ -58,3 +58,134 @@
     padding-bottom: 2rem;
 }
 
+/*mad anbefalinger*/
+
+.mad-anbefalinger-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+    background-color: #6AAA57;
+    border-radius: 0rem 5rem 0rem 5rem;
+}
+.mad-anbefalinger-container h2{
+    font-family: 'Urbanistmedium';
+    color: #FFF2E2;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 3.3rem;
+}
+
+.mad-anbefalinger{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.ret{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+   
+}
+
+.ret img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.ret h3{
+    font-family: 'UrbanistRegular';
+    color: #FFF2E2;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+/*--------------------------------------------------- Responsive*/
+
+@media (max-width: 1300px) {
+    .vin-container{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .vin-container div img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .vin-container section img{
+        width: 100%;
+    }
+    .mad-anbefalinger-container{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}
+@media (max-width: 1230px) {
+    .vin-container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .vin-container div img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .vin-container section img{
+        width: 100%;
+    }
+    .mad-anbefalinger-container{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+/*------------------Mobil------------------*/
+
+@media (max-width: 800px) {
+    .vin-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column;
+    }
+    .vin-container div{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .vin-container div img{
+        width: 100%;
+        object-fit: cover;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .vin-container section{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: center;
+    }
+    .vin-container section img{
+        width: 80%;
+    }
+    .mad-anbefalinger-container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .mad-anbefalinger{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

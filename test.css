@@ -1,11 +1,17 @@
-#overskrift2{
+#overskrift2, #overskrift3{
     color:#50320C;
-    padding-top: 7rem;
     text-align: center;
     padding-left: 7rem;
     padding-right: 7rem;
 }
-#overskrift2 h1{
+#overskrift2{
+    padding-top: 10rem;
+}
+#overskrift3{
+    padding-top: 1rem;
+}
+
+#overskrift2 h1, #overskrift3 h1{
     font-size: 2rem;
 }
 #overskrift2 h2{
@@ -19,7 +25,7 @@
     width: 100%;
     justify-content: center;
 }
-.test-1{
+.test-1, .test-2, .test-3{
     position: relative;
     width: 30%;
     display: flex;
@@ -33,21 +39,95 @@
     margin-right: 4rem;
 }
 
-.test-1 img{
+.test-1 img, .test-2 img, .test-3 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.test-1 img:hover, .test-2 img:hover, .test-3 img:hover{
+    filter: brightness(0.8);
+    transition: 0.5s;
 
-.test-1 h3{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.test-1 h3, .test-2 h3, .test-3 h3{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Urbanistmedium';
-    color: #50320C;
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
     z-index: 10;
+}
+
+.test-1 h3{
+    color: #000000;
+}
+.test-2 h3{
+    color: #FFF8EF;
+}
+.test-3 h3{
+    color: #50320C;
+}
+
+/*resultater*/
+
+.resultat{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    gap: 10rem;
+}
+.resultat img{
+    width: 30rem;
+    object-fit: cover;
+    
+}
+
+.resultat section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 40%;
+    background-color: #F1D8B9;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: solid 2px rgb(80, 50, 12, 0.3);
+    
+}
+.resultat section h2{
+    font-family: 'UrbanistRegular';
+    color: #50320C;
+    font-size: 2rem;
+    text-align: center;
+}
+.resultat section p{
+    font-family: 'UrbanistRegular';
+    color: #50320C;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.6rem;
+}
+
+#tilstart{
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+}
+
+#tilstart a{
+    color: #50320C;
+    text-decoration: none;
+    font-family: 'UrbanistBold';
+    font-size: 1.5rem;
 }

@@ -321,3 +321,22 @@ h1{
     text-align: center;
 }
 
+
+/*---------------------------------- responsive*/
+
+@media (max-width: 800px) {
+    #overskrift, #overskrift2{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #overskrift h2{
+        font-size: 2rem;
+    }
+    #tekst-afsnit{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #tekst-afsnit p{
+        font-size: 1.5rem;
+    }
+}

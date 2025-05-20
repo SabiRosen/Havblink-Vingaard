@@ -181,3 +181,26 @@
     width: 50%;
     object-fit: cover;
 }
+
+/*---------------------------------------- Resonsive*/
+
+@media (max-width: 800px) {
+    .fittyfitty, .fittyfitty2, .fittyfitty3, #vision-fittyfitty, #mission-fittyfitty, #vaerdier-fittyfitty{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .fittyfitty section, .fittyfitty2 section, .fittyfitty3 div, #vision-fittyfitty section, #mission-fittyfitty section, #vaerdier-fittyfitty section{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .fittyfitty img, .fittyfitty2 img, .fittyfitty3 img{
+        width: 100%;
+    }
+    .knap1:hover{
+        transition: none;
+        transform: none;
+        background-color: #D194FF;
+    }
+}
