@@ -1,3 +1,88 @@
+#sorter{
+    font-family: 'UrbanistRegular';
+    font-size: 1.5rem;
+    color: #50320C;
+    margin-left: 13%;
+    margin-top: 7%;
+}
+
+#sortering{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    text-align: left;
+    margin-left: 13%;
+}
+
+#sortering ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10%;
+}
+
+#sortering li{
+    font-family: 'UrbanistRegular';
+    font-size: 1.1rem;
+    
+}
+
+#sortering .dropdown-list{
+    position: relative;
+    cursor: pointer;
+    z-index: 8;
+    border:#50320C solid 2px;
+    border-radius: 5rem;
+    padding: 0.5rem 2.5rem;
+    white-space: nowrap;
+}
+
+#sortering .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1d8b9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.6rem;
+    margin-left: -2.5rem;
+    
+    
+}
+
+#sortering .dropdown-content li{
+    padding: 1rem 2rem;
+    text-align: left;
+    font-family: 'UrbanistRegular';
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 8;
+}
+
+#sortering .dropdown-content li a{
+    text-decoration: none;
+    color: #50320C;
+    display: block;
+    font-family: 'UrbanistRegular';
+}
+#sortering .dropdown-content li a:hover{
+    font-weight: bold;
+}
+
+#sortering .dropdown-content li:hover{
+    background-color: #f1d8b9;
+    text-decoration: none;
+    color: #50320C;
+}
+
+#sortering .dropdown-list:hover .dropdown-content{
+    display: block;
+}
+
+/*----------------------------------------------------------------*/
+
 .vin-container{
     width: 100%;
     display: flex;
@@ -90,7 +175,7 @@
 }
 
 .ret{
-    width: 30%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,13 +183,13 @@
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 4%;
+    margin-right: 4%;
    
 }
 
 .ret img{
-    width: 100%;
+    width: 80%;
     object-fit: cover;
 }
 
@@ -133,6 +218,15 @@
         margin-left: 8rem;
         margin-right: 8rem;
     }
+    .mad-anbefalinger{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .ret{
+        width: 20%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 @media (max-width: 1230px) {
     .vin-container{
@@ -149,6 +243,16 @@
     .mad-anbefalinger-container{
         margin-left: 5rem;
         margin-right: 5rem;
+    }
+    .mad-anbefalinger{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        flex-wrap: wrap;
+    }
+    .ret{
+        width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
@@ -187,5 +291,11 @@
     .mad-anbefalinger{
         padding-left: 2rem;
         padding-right: 2rem;
+        flex-wrap: wrap;
+    }
+    .ret{
+        width: 35%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 }
