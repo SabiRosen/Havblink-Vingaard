@@ -12,26 +12,48 @@
 </head>
 <body>
     <header>
-            <a href="index.html">
-                <img src="images/logo-brun2.png" alt="Havblink Vingård Logo" id="logo">
-            </a>
-
-            <nav id="laptopnav">
-                <ul>
-                    <li class="dropdown">
-                        <a href="voreshistorie.html"  style="text-shadow: #50320C 2px 4px 4px;">Vores Historie</a>
-                        <ul class="dropdown-content">
-                            <li><a href="vingården.html">Vingården</a></li>
-                            <li><a href="solaris.html"  style="text-shadow: #50320C 2px 4px 4px;">Druen Solaris</a></li>
-                            <li><a href="vision.html">Vision, mission og værdier</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                    <a href="voresvine.html">Vores Vine</a>
-                    <a href="test.html">Test</a>
-                    <a href="#">Webshop</a>
-            </nav>
-    </header>
+        <a href="index.html">
+            <img src="images/logo-brun2.png" alt="Havblink Vingård Logo" id="logo">
+        </a>
+        <img src="images/shop.svg" alt="Shop Icon" id="shop-icon">
+        <nav id="laptopnav">
+            <ul>
+                <li class="dropdown">
+                    <a href="voreshistorie.html" style="text-shadow: #50320c 2px 4px 4px;">Vores Historie &#x2B9F;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="vingården.html">Vingården</a></li>
+                        <li><a href="solaris.html" style="text-shadow: #50320c 2px 4px 4px;">Druen Solaris</a></li>
+                        <li><a href="vision.html">Vision, mission og værdier</a></li>
+                    </ul>
+                </li>
+            </ul>
+                <a href="voresvine.html">Vores Vine</a>
+                <a href="test.html">Test</a>
+                <a href="#">Webshop</a>
+        </nav>
+ <!-- Skjult checkbox til toggle af menuen -->
+ <input type="checkbox" id="menu-toggle" hidden>
+   
+ <label for="menu-toggle" id="menu-icon">
+     <img src="images/burger.svg" alt="Menu Icon">
+ </label>
+ <nav id="mobile-nav">
+     <ul>
+         <li>
+             <a href="voreshistorie.html">Vores Historie</a>
+                 <ul class="vores-historie-dropdown">
+                     <li><a href="vingården.html">Vingården</a></li>
+                     <li><a href="#">Druen Solaris</a></li>
+                     <li><a href="#">Vision, Mission og Værdier</a></li>
+                 </ul>
+         </li>
+         <li><a href="#">Vores Vine</a></li>
+         <li><a href="#">Test</a></li>
+         <li><a href="kalender.html">Webshop</a></li>
+     </ul>
+ </nav>
+        
+</header>
 
     <main>
         <div id="tiltoppen"></div>

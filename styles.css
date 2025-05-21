@@ -19,6 +19,18 @@
     src: url(fonts/Urbanist-SemiBoldItalic.ttf) format('truetype');
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 body{
     background-color: #FFF2E2;
 }
@@ -122,17 +134,64 @@ h1{
     border-style: solid;
     border-width: 30px;
     border-color: #457E33;
+    position: relative;
   }
   .vin-kort img, .vin-kort2 img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-.vin-kort2{
+
+    .vin-kort2{
     border-style: solid;
     border-width: 30px;
     border-color: #6AAA57;
-}
+    position: relative;
+    }
+    .vin-info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+    .vin-info h3{
+        font-family: 'UrbanistMedium';
+        color: #FFF2E2;
+        font-size: 2rem;
+        text-align: left;
+        padding-bottom: 2rem;
+    }
+    .vin-info p{
+        font-family: 'UrbanistRegular';
+        color: #FFF2E2;
+        font-size: 1.3rem;
+        text-align: left;
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+    .vin-info img{
+        width: 20rem;
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    .vin-info:hover{
+        opacity: 1;
+        background-color: rgb(80, 50, 12, 0.8);
+        transition: opacity 0.7s ease;
+    }
 
 
 /*boarder afsnit*/
@@ -324,7 +383,104 @@ h1{
 
 /*---------------------------------- responsive*/
 
+@media screen and (max-width: 1365px) {
+    #overskrift, #overskrift2{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    #overskrift h2{
+        font-size: 2.5rem;
+    }
+    #tekst-afsnit{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    #tekst-afsnit p{
+        font-size: 1.5rem;
+    }
+    .vin-info img{
+        margin-top: 3rem;
+    }
+    .vin-info p{
+        padding: 0;
+    }
+    .vin-info h3{
+        padding: 0;
+    }
+    .info-tekst{
+        padding-top: 5rem;
+    }
+    .info-tekst .knap1{
+        width: 50%;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #overskrift, #overskrift2{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #overskrift h2{
+        font-size: 2.5rem;
+    }
+    #tekst-afsnit{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #tekst-afsnit p{
+        font-size: 1.5rem;
+    }
+    .vin-info img{
+        width: 15rem;
+        height: auto;
+    }
+    .vin-info p{
+        padding: 0;
+        font-size: 1.1rem;
+    }
+    .vin-info h3{
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    .info-tekst{
+        padding-top: 5rem;
+    }
+    .info-tekst .knap1{
+        width: 70%;
+        margin-top: 2rem;
+    }
+    
+}
+
 @media (max-width: 800px) {
+    #hero-logo img{
+        width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+    }
+    #hero-section #nedpil img{
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        animation: bounce 2s infinite;
+    }
+    #hero-section{
+        width: 100%;
+        height: 100dvh;
+        object-fit: cover;
+    }
+    #highlighted-vine{
+        margin-top: 3rem;
+    }
+    #highlighted-vine h2{
+        font-size: 2.5rem;
+    }
+    #vin-kort-container{
+        flex-direction: column;
+    }
+    
+
     #overskrift, #overskrift2{
         padding-left: 2rem;
         padding-right: 2rem;
@@ -337,6 +493,57 @@ h1{
         padding-right: 2rem;
     }
     #tekst-afsnit p{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    #forside-vingaard-baggrund, #forside-cafe-baggrund{
+        flex-direction: column;
+        border-radius: 12rem 0rem 12rem 0rem;
+    }
+    .forside-border{
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .forside-border div{
+        width: 100%;
+    }
+    .forside-border div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .info-tekst{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    #forside-vingaard-baggrund .info-tekst{
+        padding-top: 2rem;
+    }
+    #forside-cafe-baggrund .info-tekst{
+        padding-bottom: 2rem;
+        padding-top: 0rem;
+    }
+    .info-tekst h2{
+        text-align: center;
+        align-self: center;
+    }
+    #forside-vingaard-baggrund .knap1, #forside-cafe-baggrund .knap1{
+        width: 60%;
+        margin-top: 2rem;
+    }
+    .knap1{
+        width: 60%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .knap1:hover{
+        transform: none;
+        transition: none;
+        background-color: #D194FF;
     }
 }

@@ -5,7 +5,7 @@
 }
 
 header{
-    background-color: rgb(241, 216, 185, 80%);
+    background-color: rgb(241, 216, 185, 70%);
     padding-left: 20px;
     padding-right: 20px;
 
@@ -17,6 +17,7 @@ header{
     flex-direction: row;
     width: 100%;
     z-index: 10;
+    backdrop-filter: blur(2px);
 }
 
 header img{
@@ -35,6 +36,7 @@ header img:hover{
     align-items: center;
     width: 55%;
 }
+  
 
 /* style dropdown*/
 
@@ -71,9 +73,10 @@ nav .dropdown:hover .dropdown-content {
 nav .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(241, 216, 185, 80%);
+    background-color: rgb(241, 216, 185, 70%);
     min-width: 160px;
     z-index: 4;
+    backdrop-filter: blur(2px);
 }
 
 nav .dropdown-content li {
@@ -89,6 +92,95 @@ nav .dropdown-content li a:hover {
     text-shadow: #50320C 2px 4px 4px;
 }
 
+
+/*BURGER MENU OG DROPDOWN ELEMENTER*/
+
+#menu-toggle{
+    display: none;
+}
+
+
+#menu-icon{
+    display: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+#shop-icon{
+    display: none;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+#mobile-nav{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    width: 42%;
+    height: 100vh;
+    background-color: rgb(241, 216, 185, 70%); 
+    z-index: 8; 
+    padding: 20px 10px;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
+#mobile-nav a{
+    width: 100%;
+    text-align: left;
+}
+
+#menu-toggle:checked + label + #mobile-nav {
+    display: flex;
+}
+
+#mobile-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#mobile-nav ul .vores-historie-dropdown{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+#mobile-nav ul .vores-historie-dropdown li{
+    margin: 0;
+    padding: 10px 0;
+}
+
+#mobile-nav ul .vores-historie-dropdown li a{
+    text-decoration: none;
+    color:#50320C;
+    font-family: 'UrbanistSemiBold';
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: block;
+    padding: 10px 10px;
+}
+
+
+#mobile-nav li{
+    margin: 10px 0;
+    width: 100%;
+}
+
+#mobile-nav li a{
+    text-decoration: none;
+    color:#50320C;
+    font-family: 'UrbanistSemiBold';
+    font-size: 20px;
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+}
 
 /* FOOTER */
 
@@ -162,4 +254,86 @@ footer p{
     object-fit: cover;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header img:hover{
+        box-shadow: none;
+        border-radius: 0;
+    }
+    
+    header a:hover{
+        text-shadow: none;
+        transition: none; 
+    }
+    #laptopnav{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+        margin-top: 1rem;
+    }  
+    #shop-icon{
+        display: block;
+        margin-top: 0.6rem;
+        margin-left:15rem;
+    }
+    #logo{
+        height:50px;
+        width:50px;
+        margin-top: 1rem;
+    }
+    
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 3rem;
+    }
+    footer div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer section{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+    footer section h2{
+        text-align: left;
+        padding-bottom: 2rem;
+    }
+    footer section p{
+        text-align: left;
+        line-height: 2rem;
+    }
+    footer section a{
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+    #socialmedia{
+        gap: 1rem;
+        align-items: flex-start;
+        padding: 0;
+    }
+    #oeko{
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+        padding-top: 1rem;
+    }
+    #kort{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
 }
