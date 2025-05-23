@@ -61,7 +61,7 @@
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
-    z-index: 10;
+    z-index: 7;
 }
 
 .test-1 h3{
@@ -130,4 +130,58 @@
     text-decoration: none;
     font-family: 'UrbanistBold';
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px){
+    #test{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .test-1, .test-2, .test-3{
+        width: 60%;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0;
+
+    }
+    .resultat{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        gap: 3rem;
+    }
+    .resultat img{
+        width: 100%;
+    }
+    .resultat section{
+        width: 100%;
+        margin-bottom: 2rem;
+        
+    }
+    #overskrift2, #overskrift3{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+    }
+    #tilstart{
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+    .test-1 img:hover, .test-2 img:hover, .test-3 img:hover{
+        filter: none;
+        transition: none;
+        transform: none;
+    }
+    #overskrift3{
+        padding-top: 3rem;
+    }
 }

@@ -33,7 +33,6 @@
     padding-right: 7rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    
 }
 
 .fittyfitty section, .fittyfitty3 div{
@@ -181,6 +180,9 @@
     width: 50%;
     object-fit: cover;
 }
+.vmv-billede3{
+    display: none;
+}
 
 /*---------------------------------------- Resonsive*/
 
@@ -202,5 +204,30 @@
         transition: none;
         transform: none;
         background-color: #D194FF;
+    }
+    
+    #vision-fittyfitty div, #mission-fittyfitty div, #vaerdier-fittyfitty div{
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    #vision-fittyfitty div img, #mission-fittyfitty div img, #vaerdier-fittyfitty div img{
+        width: 80%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    .vmv-billede2{
+        display: none;
+    }
+    #vision-fittyfitty section, #vaerdier-fittyfitty section{
+        padding-top: 0rem;
+    }
+    #mission-fittyfitty section{
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+    .vmv-billede3{
+        display: block;
     }
 }

@@ -113,7 +113,7 @@ h1{
 
 #highlighted-vine{
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 7rem;
     width: 100%;
   }
   
@@ -121,13 +121,13 @@ h1{
     font-size: 4rem;
     font-family: 'UrbanistMedium';
     color: #50320C;
+    margin-bottom: 2rem;
   }
   
   #vin-kort-container{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 2rem;
   }
 
   .vin-kort{
@@ -192,7 +192,64 @@ h1{
         background-color: rgb(80, 50, 12, 0.8);
         transition: opacity 0.7s ease;
     }
+    #vin-info-afsnit, #vin-info-afsnit2{
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    #vin-info-afsnit{
+        background-color: #457E33;
+    }
+    #vin-info-afsnit2{
+        background-color: #6AAA57;
+    }
+    #vin-info-afsnit h3, #vin-info-afsnit2 h3{
+        font-family: 'UrbanistRegular';
+        font-weight: 200;
+        color: #FFF2E2;
+        font-size: 2rem;
+    }
+    .knap4{
+        border:#FFF2E2 solid 2px;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+    }
+    .knap4 a{
+        text-decoration: none;
+        color: #FFF2E2;
+        font-family: 'UrbanistRegular';
+        font-size: 1rem;
+    }
+    #forside-test{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 6rem;
 
+        background-color: #457E33;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #forside-test h3{
+        color: #FFF2E2;
+        font-family: 'UrbanistRegular';
+        font-weight: 300;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #forside-test .knap1{
+        width: 35%;
+        margin-top: 2rem;
+    }
 
 /*boarder afsnit*/
 
@@ -324,7 +381,21 @@ h1{
     line-height: 2rem;
 }
 
-
+#tekst-afsnit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+#tekst-afsnit p{
+    font-family: 'UrbanistRegular';
+    font-size: 1.8rem;
+    color: #50320C;
+    text-align: center;
+}
 /* Vores Historie og Vores Vine "forside"*/
 
 #vores {
@@ -363,21 +434,11 @@ h1{
     color: #ffffff;
     text-align: center;
 }
-
-#tekst-afsnit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 4rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
+#vores-mobil-billede{
+    display: none;
 }
-#tekst-afsnit p{
-    font-family: 'UrbanistRegular';
-    font-size: 1.8rem;
-    color: #50320C;
-    text-align: center;
+#vores-desktop-billede{
+    display: flex;
 }
 
 
@@ -479,8 +540,15 @@ h1{
     #vin-kort-container{
         flex-direction: column;
     }
-    
-
+    .vin-info{
+        display: none;
+    }
+    #vin-info-afsnit, #vin-info-afsnit2{
+        display: flex;
+    }
+    #forside-test{
+        display: flex;
+    }
     #overskrift, #overskrift2{
         padding-left: 2rem;
         padding-right: 2rem;
@@ -545,5 +613,17 @@ h1{
         transform: none;
         transition: none;
         background-color: #D194FF;
+    }
+    #vores-desktop-billede{
+        display: none;
+    }
+    #vores-mobil-billede{
+        display: flex;
+    }
+    #vores-tekst h1{
+        font-size: 3rem;
+    }
+    #vores-tekst p{
+        font-size: 2rem;
     }
 }

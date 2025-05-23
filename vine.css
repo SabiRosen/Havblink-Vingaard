@@ -1,3 +1,4 @@
+
 #sorter{
     font-family: 'UrbanistRegular';
     font-size: 1.5rem;
@@ -94,7 +95,7 @@
 }
 
 .vin-container div{
-    width: 50%;
+    width: 60%;
 }
 .vin-container div img{
     display: flex;
@@ -107,12 +108,12 @@
 }
 
 .vin-container section{
-    width: 50%;
+    width: 40%;
     display: flex;
     text-align: left;
     flex-direction: column;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 .vin-container section img{
     width: 70%;
@@ -232,6 +233,9 @@
     .vin-container{
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+    .vin-container div{
+        width: 60%;
     }
     .vin-container div img{
         width: 100%;
