@@ -26,8 +26,7 @@ header img{
     height: 60px;
 }
 header img:hover{
-    box-shadow: #50320C 2px 4px 4px;
-    border-radius: 50%;
+    filter: drop-shadow(2px 4px 4px #50320c);
 }
 
 
@@ -115,7 +114,6 @@ nav .dropdown-content li a:hover {
 }
 
 #mobile-nav{
-    display: none;
     flex-direction: column;
     position: absolute;
     top: 80px; 
@@ -127,6 +125,11 @@ nav .dropdown-content li a:hover {
     padding: 20px 10px;
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
 }
 #mobile-nav a{
     width: 100%;
@@ -134,7 +137,9 @@ nav .dropdown-content li a:hover {
 }
 
 #menu-toggle:checked + label + #mobile-nav {
-    display: flex;
+   max-height: 530px;
+   opacity: 1;
+   padding: 20px 10px;
 }
 
 #mobile-nav ul{
