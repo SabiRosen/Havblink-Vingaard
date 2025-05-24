@@ -30,6 +30,9 @@
         transform: translateY(-5px);
     }
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: #FFF2E2;
@@ -103,6 +106,7 @@ h1{
     width: 5rem;
     height: 5rem;
     object-fit: cover;
+    animation: bounce 2s infinite;
 }
 #hero-section #nedpil img:hover{
     transform: scale(1.05);
@@ -140,6 +144,7 @@ h1{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
     }
 
     .vin-kort2{
@@ -173,7 +178,7 @@ h1{
         text-align: left;
         padding-bottom: 2rem;
     }
-    .vin-info p{
+    .vin-info p, .vin-info a{
         font-family: 'UrbanistRegular';
         color: #FFF2E2;
         font-size: 1.3rem;
@@ -181,10 +186,16 @@ h1{
         width: 50%;
         padding-bottom: 1rem;
     }
+    .vin-info a{
+        text-decoration: underline;
+        padding-top: 1.5rem;
+        cursor: pointer;
+    }
+    
     .vin-info img{
         width: 20rem;
         height: auto;
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
     .vin-info:hover{
@@ -210,6 +221,7 @@ h1{
         color: #FFF2E2;
         font-size: 2rem;
     }
+    /*------------------------------------------------------*/
     .knap4{
         border:#FFF2E2 solid 2px;
         padding-left: 1.8rem;
@@ -251,7 +263,7 @@ h1{
         margin-top: 2rem;
     }
 
-/*boarder afsnit*/
+/*border afsnit*/
 
 #forside-vingaard-baggrund{
     display: flex;
@@ -381,67 +393,6 @@ h1{
     line-height: 2rem;
 }
 
-#tekst-afsnit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 4rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
-}
-#tekst-afsnit p{
-    font-family: 'UrbanistRegular';
-    font-size: 1.8rem;
-    color: #50320C;
-    text-align: center;
-}
-/* Vores Historie og Vores Vine "forside"*/
-
-#vores {
-    width: 100%;
-    height: 100vh;
-}
-
-#vores-indhold {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7rem;
-}
-
-#vores-indhold img {
-    width: 70%;
-}
-
-#vores-tekst {
-    position: absolute;
-    top: 40%;
-    left: 16%;
-    width: 70%;
-    text-align: center;
-}
-
-#vores-tekst h1 {
-    font-family: 'UrbanistSemiBold';
-    font-size: 4rem;
-    color: #ffffff
-}
-
-#vores-tekst p {
-    font-family: 'UrbanistsemiBold';
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-align: center;
-}
-#vores-mobil-billede{
-    display: none;
-}
-#vores-desktop-billede{
-    display: flex;
-}
-
-
 /*---------------------------------- responsive*/
 
 @media screen and (max-width: 1365px) {
@@ -452,13 +403,7 @@ h1{
     #overskrift h2{
         font-size: 2.5rem;
     }
-    #tekst-afsnit{
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-    #tekst-afsnit p{
-        font-size: 1.5rem;
-    }
+    
     .vin-info img{
         margin-top: 3rem;
     }
@@ -484,13 +429,6 @@ h1{
     }
     #overskrift h2{
         font-size: 2.5rem;
-    }
-    #tekst-afsnit{
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    #tekst-afsnit p{
-        font-size: 1.5rem;
     }
     .vin-info img{
         width: 15rem;
@@ -524,7 +462,6 @@ h1{
         width: 4rem;
         height: 4rem;
         object-fit: cover;
-        animation: bounce 2s infinite;
     }
     #hero-section{
         width: 100%;
@@ -555,13 +492,6 @@ h1{
     }
     #overskrift h2{
         font-size: 2rem;
-    }
-    #tekst-afsnit{
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    #tekst-afsnit p{
-        font-size: 1.3rem;
     }
     #forside-vingaard-baggrund, #forside-cafe-baggrund{
         flex-direction: column;
@@ -613,17 +543,5 @@ h1{
         transform: none;
         transition: none;
         background-color: #D194FF;
-    }
-    #vores-desktop-billede{
-        display: none;
-    }
-    #vores-mobil-billede{
-        display: flex;
-    }
-    #vores-tekst h1{
-        font-size: 3rem;
-    }
-    #vores-tekst p{
-        font-size: 2rem;
     }
 }

@@ -131,6 +131,9 @@
     font-family: 'UrbanistBold';
     font-size: 1.5rem;
 }
+#tilstart:hover a{
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 800px){
     #test{
@@ -175,6 +178,9 @@
     #tilstart{
         margin-left: 2rem;
         margin-bottom: 3rem;
+    }
+    #tilstart:hover a{
+        text-decoration: none;
     }
     .test-1 img:hover, .test-2 img:hover, .test-3 img:hover{
         filter: none;

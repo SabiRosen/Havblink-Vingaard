@@ -1,3 +1,75 @@
+#tekst-afsnit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+#tekst-afsnit p{
+    font-family: 'UrbanistRegular';
+    font-size: 1.8rem;
+    color: #50320C;
+    text-align: center;
+}
+#tekst-afsnit a{
+    margin-top: 2rem;
+    font-family: 'UrbanistSemiBold';
+    font-size: 1.8rem;
+    text-align: center;
+    color: #50320C;
+    text-decoration: none;
+}
+#tekst-afsnit:hover a{
+    text-decoration: underline;
+}
+/* Vores Historie og Vores Vine "forside"*/
+
+#vores {
+    width: 100%;
+    height: 100vh;
+}
+
+#vores-indhold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+#vores-indhold img {
+    width: 70%;
+}
+
+#vores-tekst {
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    width: 70%;
+    text-align: center;
+}
+
+#vores-tekst h1 {
+    font-family: 'UrbanistSemiBold';
+    font-size: 4rem;
+    color: #ffffff
+}
+
+#vores-tekst p {
+    font-family: 'UrbanistsemiBold';
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+#vores-mobil-billede{
+    display: none;
+}
+#vores-desktop-billede{
+    display: flex;
+}
+
+
 .fittyfitty, .fittyfitty2{
     width:100%;
     height: 90vh;
@@ -94,7 +166,6 @@
 
 .knap2 a, .knap3 a{
     text-decoration: none;
-    color: #50320C;
     font-family: 'UrbanistRegular';
     font-size: 1.3rem;
 }
@@ -185,8 +256,48 @@
 }
 
 /*---------------------------------------- Resonsive*/
-
+@media screen and (max-width: 1365px) {
+    #tekst-afsnit{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    #tekst-afsnit p, #tekst-afsnit a{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1180px) {
+    #tekst-afsnit{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #tekst-afsnit p{
+        font-size: 1.5rem;
+    }
+}
 @media (max-width: 800px) {
+    #tekst-afsnit{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #tekst-afsnit p, #tekst-afsnit a{
+        font-size: 1.3rem;
+    }
+
+    #tekst-afsnit:hover a{
+        text-decoration: none;
+    }
+    #vores-desktop-billede{
+        display: none;
+    }
+    #vores-mobil-billede{
+        display: flex;
+    }
+    #vores-tekst h1{
+        font-size: 3rem;
+    }
+    #vores-tekst p{
+        font-size: 2rem;
+    }
     .fittyfitty, .fittyfitty2, .fittyfitty3, #vision-fittyfitty, #mission-fittyfitty, #vaerdier-fittyfitty{
         flex-direction: column;
         width: 100%;
@@ -229,5 +340,23 @@
     }
     .vmv-billede3{
         display: block;
+    }
+    .knap2:hover, .knap3:hover{
+        transition: none;
+        transform: none;
+    }
+    .knap2:hover{
+        background-color: #F1D8B9;
+        border: solid #50320C 2px;
+    }
+    .knap2 a:hover{
+        color:#50320C;
+    }
+    .knap3:hover{
+        background-color: #50320C;
+        border:solid #F1D8B9 2px;
+    }
+    .knap3 a:hover{
+        color:#F1D8B9;
     }
 }
