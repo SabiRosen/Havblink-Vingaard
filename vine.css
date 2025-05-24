@@ -222,6 +222,7 @@
     overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
+    overflow-y: visible;
 }
 
 #anmeldelser-container::-webkit-scrollbar {
@@ -283,10 +284,10 @@
     transition: transform 0.3s ease;
     z-index: 1;
 
-    transform-origin: center bottom;
+    transform-origin: bottom center;
 }
 .anmeldelser:hover img{
-    transform: scale(1.4);
+    transform: scale(1.32);
     z-index: 8;
     filter:drop-shadow(2px 4px 4px #281906)
 }
@@ -357,6 +358,41 @@
         margin-left: 2%;
         margin-right: 2%;
     }
+    #anmeldelser-container{
+        gap: 1rem;
+        padding-left: 2.5rem;
+        padding-top: 1rem;
+        gap: 10%;
+    }
+    .anmeldelser{
+        min-width: 350px;
+        padding: 1rem;
+        border-radius: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .anmeldelser section{
+        width: 60%;
+        padding: 0.5rem;
+        margin: 0
+    }
+    .anmeldelser section h3{
+        font-size: 1.1rem;
+    }
+    .anmeldelser section p{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .anmeldelser img{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        align-items: baseline;
+    }
 }
 
 /*------------------Mobil------------------*/
@@ -424,14 +460,14 @@
         gap: 10%;
     }
     .anmeldelser{
-        width: 70vw;
+        min-width: 350px;
         padding: 1rem;
-        border-radius: 2rem;
+        border-radius: 3rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     .anmeldelser section{
-        width: 60vw;
+        width: 60%;
         padding: 0.5rem;
         margin: 0
     }
@@ -441,12 +477,16 @@
     .anmeldelser section p{
         font-size: 0.9rem;
         line-height: 1.4rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     .anmeldelser img{
-        width: 20vw;
+        width: 100%;
+        max-width: 200px;
         height: auto;
         margin: 0;
         padding: 0;
+        align-items: baseline;
     }
     .anmeldelser:hover img, .anmeldelser p:first-of-type, .anmeldelser:hover p:first-of-type{
         transform: none;

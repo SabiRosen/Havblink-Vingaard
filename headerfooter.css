@@ -193,6 +193,7 @@ nav .dropdown-content li a:hover {
 footer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: #f1d8b9;
     width: 100%;
     position: relative;

@@ -121,147 +121,148 @@ h1{
     width: 100%;
   }
   
-  #highlighted-vine h2 {
+#highlighted-vine h2 {
     font-size: 4rem;
     font-family: 'UrbanistMedium';
     color: #50320C;
     margin-bottom: 2rem;
-  }
+}
   
-  #vin-kort-container{
+#vin-kort-container{
     display: flex;
     justify-content: center;
     flex-direction: row;
-  }
+}
 
-  .vin-kort{
+.vin-kort{
     border-style: solid;
     border-width: 30px;
     border-color: #457E33;
     position: relative;
-  }
-  .vin-kort img, .vin-kort2 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
+}
+.vin-kort img, .vin-kort2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-    .vin-kort2{
+.vin-kort2{
     border-style: solid;
     border-width: 30px;
     border-color: #6AAA57;
     position: relative;
-    }
-    .vin-info{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding-left: 5rem;
-        padding-right: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        position: absolute;
+}
+.vin-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
 
-        top: 0;
-        left: 0;
+    top: 0;
+    left: 0;
 
-        opacity: 0;
-        transition: opacity 0.2s ease;
-    }
-    .vin-info h3{
-        font-family: 'UrbanistMedium';
-        color: #FFF2E2;
-        font-size: 2rem;
-        text-align: left;
-        padding-bottom: 2rem;
-    }
-    .vin-info p, .vin-info a{
-        font-family: 'UrbanistRegular';
-        color: #FFF2E2;
-        font-size: 1.3rem;
-        text-align: left;
-        width: 50%;
-        padding-bottom: 1rem;
-    }
-    .vin-info a{
-        text-decoration: underline;
-        padding-top: 1.5rem;
-        cursor: pointer;
-    }
-    
-    .vin-info img{
-        width: 20rem;
-        height: auto;
-        margin-top: 4rem;
-    }
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.vin-info h3{
+    font-family: 'UrbanistMedium';
+    color: #FFF2E2;
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+.vin-info p, .vin-info a{
+    font-family: 'UrbanistRegular';
+    color: #FFF2E2;
+    font-size: 1.3rem;
+    text-align: left;
+    width: 50%;
+    padding-bottom: 1rem;
+}
+.vin-info a{
+    text-decoration: underline;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
 
-    .vin-info:hover{
-        opacity: 1;
-        background-color: rgb(80, 50, 12, 0.8);
-        transition: opacity 0.7s ease;
-    }
-    #vin-info-afsnit, #vin-info-afsnit2{
-        display: none;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 1rem;
-    }
-    #vin-info-afsnit{
-        background-color: #457E33;
-    }
-    #vin-info-afsnit2{
-        background-color: #6AAA57;
-    }
-    #vin-info-afsnit h3, #vin-info-afsnit2 h3{
-        font-family: 'UrbanistRegular';
-        font-weight: 200;
-        color: #FFF2E2;
-        font-size: 2rem;
-    }
-    /*------------------------------------------------------*/
-    .knap4{
-        border:#FFF2E2 solid 2px;
-        padding-left: 1.8rem;
-        padding-right: 1.8rem;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        border-radius: 50px;
-        text-align: center;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        display: flex;
-        justify-content: center;
-    }
-    .knap4 a{
-        text-decoration: none;
-        color: #FFF2E2;
-        font-family: 'UrbanistRegular';
-        font-size: 1rem;
-    }
-    #forside-test{
-        display: none;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 6rem;
+.vin-info img{
+    width: 20rem;
+    height: auto;
+    margin-top: 4rem;
+}
 
-        background-color: #457E33;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    #forside-test h3{
-        color: #FFF2E2;
-        font-family: 'UrbanistRegular';
-        font-weight: 300;
-        text-align: center;
-        font-size: 1.5em;
-    }
-    #forside-test .knap1{
-        width: 35%;
-        margin-top: 2rem;
-    }
+.vin-kort:hover .vin-info,
+.vin-kort2:hover .vin-info {
+    opacity: 1;
+    background-color: rgb(80, 50, 12, 0.8);
+    transition: opacity 0.7s ease;
+}
+#vin-info-afsnit, #vin-info-afsnit2{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+#vin-info-afsnit{
+    background-color: #457E33;
+}
+#vin-info-afsnit2{
+    background-color: #6AAA57;
+}
+#vin-info-afsnit h3, #vin-info-afsnit2 h3{
+    font-family: 'UrbanistRegular';
+    font-weight: 200;
+    color: #FFF2E2;
+    font-size: 2rem;
+}
+/*------------------------------------------------------*/
+.knap4{
+    border:#FFF2E2 solid 2px;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+}
+.knap4 a{
+    text-decoration: none;
+    color: #FFF2E2;
+    font-family: 'UrbanistRegular';
+    font-size: 1rem;
+}
+#forside-test{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+
+    background-color: #457E33;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#forside-test h3{
+    color: #FFF2E2;
+    font-family: 'UrbanistRegular';
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5em;
+}
+#forside-test .knap1{
+    width: 35%;
+    margin-top: 2rem;
+}
 
 /*border afsnit*/
 
@@ -472,7 +473,7 @@ h1{
         margin-top: 3rem;
     }
     #highlighted-vine h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     #vin-kort-container{
         flex-direction: column;
@@ -482,6 +483,11 @@ h1{
     }
     #vin-info-afsnit, #vin-info-afsnit2{
         display: flex;
+        align-items: center;
+    }
+    #vin-info-afsnit h3, #vin-info-afsnit2 h3{
+        font-size: 1.2rem;
+
     }
     #forside-test{
         display: flex;
@@ -499,8 +505,8 @@ h1{
     }
     .forside-border{
         flex-direction: column;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .forside-border div{
         width: 100%;
@@ -515,9 +521,18 @@ h1{
     }
     .info-tekst{
         width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        
+    }
+    #forside-vinsmagning{
         padding-left: 2rem;
         padding-right: 2rem;
-        text-align: center;
+    }
+    #forside-vinsmagning{
+        word-break: break-word;
+        font-size: 1rem;
     }
     #forside-vingaard-baggrund .info-tekst{
         padding-top: 2rem;
@@ -529,6 +544,11 @@ h1{
     .info-tekst h2{
         text-align: center;
         align-self: center;
+        
+    }
+    .info-tekst p{
+        word-break: break-word;
+        font-size: 1.3rem;
     }
     #forside-vingaard-baggrund .knap1, #forside-cafe-baggrund .knap1{
         width: 60%;
