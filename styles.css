@@ -394,7 +394,7 @@ h1{
     line-height: 2rem;
 }
 
-/*---------------------------------- responsive*/
+/*------------------Responsive------------------*/
 
 @media screen and (max-width: 1365px) {
     #overskrift, #overskrift2{
@@ -453,10 +453,12 @@ h1{
     
 }
 
-@media (max-width: 800px) {
+/*------------------Mobil------------------*/
+
+@media screen and (max-width: 800px) {
     #hero-logo img{
-        width: 25rem;
-        height: 25rem;
+        width: 75vw;
+        height: auto;
         object-fit: cover;
     }
     #hero-section #nedpil img{
@@ -536,6 +538,7 @@ h1{
     }
     #forside-vingaard-baggrund .info-tekst{
         padding-top: 2rem;
+        margin: 0;
     }
     #forside-cafe-baggrund .info-tekst{
         padding-bottom: 2rem;

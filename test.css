@@ -135,6 +135,8 @@
     text-decoration: underline;
 }
 
+/*------------------Mobil------------------*/
+
 @media screen and (max-width: 800px){
     #test{
         flex-direction: column;

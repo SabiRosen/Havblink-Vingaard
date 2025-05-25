@@ -116,20 +116,23 @@ nav .dropdown-content li a:hover {
 #mobile-nav{
     flex-direction: column;
     position: absolute;
-    top: 80px; 
+    top: 5rem; 
     right: 0;
-    width: 42%;
-    height: 100vh;
+    width: 55%;
+    height: 80vh;
     background-color: rgb(241, 216, 185, 80%); 
     z-index: 8; 
-    padding: 20px 10px;
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
 
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #50320c #fff2e2;
 }
 #mobile-nav a{
     width: 100%;
@@ -137,9 +140,9 @@ nav .dropdown-content li a:hover {
 }
 
 #menu-toggle:checked + label + #mobile-nav {
-   max-height: 530px;
+   max-height: 450px;
    opacity: 1;
-   padding: 20px 10px;
+   padding: 1rem 0.6rem;
 }
 
 #mobile-nav ul{
@@ -159,22 +162,24 @@ nav .dropdown-content li a:hover {
 
 #mobile-nav ul .vores-historie-dropdown li{
     margin: 0;
-    padding: 10px 0;
+    padding: 0.5rem 0;
 }
 
 #mobile-nav ul .vores-historie-dropdown li a{
     text-decoration: none;
     color:#50320C;
-    font-family: 'UrbanistSemiBold';
+    font-family: 'UrbanistBold';
     font-size: 16px;
     letter-spacing: 2px;
+    line-height: 1.2rem;
     display: block;
-    padding: 10px 10px;
+    padding-top: 0.5rem;
+    padding-left: 2.2rem;
 }
 
 
 #mobile-nav li{
-    margin: 10px 0;
+    margin: 0.5rem 0;
     width: 100%;
 }
 
@@ -184,7 +189,9 @@ nav .dropdown-content li a:hover {
     font-family: 'UrbanistSemiBold';
     font-size: 20px;
     display: block;
-    padding: 5px 0;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
     width: 100%;
 }
 
@@ -262,6 +269,9 @@ footer p{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+/*------------------Responsive------------------*/
+/*------------------Mobil------------------*/
 
 @media screen and (max-width: 800px){
     header{
