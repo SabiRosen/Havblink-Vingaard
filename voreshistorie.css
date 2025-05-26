@@ -72,6 +72,7 @@
     display: flex;
 }
 
+/*------------fittyfitty-----------------------*/
 
 .fittyfitty, .fittyfitty2{
     width:100%;
@@ -97,12 +98,10 @@
     z-index: 10;
 }
 
-.fittyfitty section, .fittyfitty3 div, #vision-fittyfitty section, #mission-fittyfitty section, #vaerdier-fittyfitty section{
+.fittyfitty section, .fittyfitty2 section,.fittyfitty3 div, #vision-fittyfitty section, #mission-fittyfitty section, #vaerdier-fittyfitty section{
     width: 50%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
     flex-direction: column;
     padding-left: 7rem;
     padding-right: 7rem;
@@ -114,23 +113,20 @@
     background-color: #F1D8B9;
     color: #50320C;
 }
-#mission-fittyfitty section, #vaerdier-fittyfitty section{
-    color: #FFF2E2;
-}
-#vision-fittyfitty section{
-    color: #50320C;
+.fittyfitty2 section{
+    background-color: #50320C;
+    color: #F1D8B9;
 }
 
-
-.fittyfitty section h2, .fittyfitty2 section h2, #vision-fittyfitty section h2, #mission-fittyfitty section h2, #vaerdier-fittyfitty section h2{
+.fittyfitty section h2, .fittyfitty2 section h2{
     font-family: 'Urbanistmedium';
-    text-align: center;
+    text-align: left;
     font-size: 32px;
 }
 
 .fittyfitty section p, .fittyfitty2 section p, .fittyfitty3 div p, #vision-fittyfitty section p, #mission-fittyfitty section p, #vaerdier-fittyfitty section p{
     font-family: 'UrbanistRegular';
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     padding-top: 2rem;
     line-height: 32px;
@@ -200,20 +196,6 @@
     color: #50320C;
 }
 
-.fittyfitty2 section{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: #50320C;
-    color: #F1D8B9;
-}
 
 /*---------------------------------------------*/
 
@@ -232,14 +214,24 @@
 #vaerdier-fittyfitty{
     background-color: #50320C;
 }
+#mission-fittyfitty section, #vaerdier-fittyfitty section{
+    color: #FFF2E2;
+}
+#vision-fittyfitty section{
+    color: #50320C;
+}
 
+#vision-fittyfitty section h2, #mission-fittyfitty section h2, #vaerdier-fittyfitty section h2{
+    font-family: 'Urbanistmedium';
+    text-align: center;
+    font-size: 32px;
+}
 
 #vision-fittyfitty div, #mission-fittyfitty div, #vaerdier-fittyfitty div{
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
     flex-direction: column;
     padding-top: 4rem;
     padding-bottom: 4rem;
