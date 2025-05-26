@@ -225,20 +225,9 @@
     overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
+    scrollbar-width: medium;
+    scrollbar-color: #50320C #f1d8b9;
     overflow-y: visible;
-}
-
-#anmeldelser-container::-webkit-scrollbar {
-    height: 8px;
-}
-
-#anmeldelser-container::-webkit-scrollbar-thumb {
-    background-color: #50320C; 
-    border-radius: 4px;
-}
-
-#anmeldelser-container::-webkit-scrollbar-track {
-    background-color: #f1d8b9; 
 }
 
 .anmeldelser{
@@ -462,35 +451,42 @@
         font-size: 1.1rem;
     }
     #overskrift4{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     #anmeldelser-container{
         gap: 1rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
-        padding-top: 1rem;
+        padding-top: 2%;
         gap: 10%;
     }
     .anmeldelser{
-        min-width: 350px;
+        min-width: 300px;
+        max-height: 280px;
         padding: 1rem;
         border-radius: 3rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     .anmeldelser section{
-        width: 60%;
-        padding: 0.5rem;
+        width: 65%;
+        padding: 0.3rem;
         margin: 0
     }
     .anmeldelser section h3{
         font-size: 1.1rem;
     }
     .anmeldelser section p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 1.4rem;
         word-wrap: break-word;
         overflow-wrap: break-word;
+    }
+    .anmeldelser div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .anmeldelser img{
         width: 100%;
@@ -498,7 +494,8 @@
         height: auto;
         margin: 0;
         padding: 0;
-        align-items: baseline;
+        object-fit: cover;
+        aspect-ratio: 1/3;
     }
     .anmeldelser:hover img, .anmeldelser p:first-of-type, .anmeldelser:hover p:first-of-type{
         transform: none;
