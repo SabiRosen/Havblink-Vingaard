@@ -27,7 +27,7 @@
 
 #vores {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 }
 
 #vores-indhold {
@@ -36,11 +36,13 @@
     align-items: center;
     padding-top: 7rem;
     position: relative;
+    min-height: 600px;
 }
 
 #vores-indhold img {
     width: 70%;
-    
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 #vores-tekst {
@@ -113,7 +115,7 @@
     color: #50320C;
 }
 #mission-fittyfitty section, #vaerdier-fittyfitty section{
-    color: #F1D8B9;
+    color: #FFF2E2;
 }
 #vision-fittyfitty section{
     color: #50320C;
@@ -138,6 +140,7 @@
     display: flex;
     width: 50%;
     object-fit: cover;
+    aspect-ratio: 4 / 3;
 }
 
 .knap2, .knap3{
@@ -245,12 +248,16 @@
     color: #50320C;
 }
 #mission-fittyfitty div, #vaerdier-fittyfitty div{
-    color: #F1D8B9;
+    color: #FFF2E2;
 }
 
 #vision-fittyfitty div img, #mission-fittyfitty div img, #vaerdier-fittyfitty div img{
     width: 50%;
     object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+#mission-fittyfitty section div{
+    display: none;
 }
 .vmv-billede3{
     display: none;
@@ -296,6 +303,9 @@
     #vores{
         margin-bottom: 3.5rem;
     }
+    #vores-indhold img{
+        aspect-ratio: 3/5;
+    }
     #vores-desktop-billede{
         display: none;
     }
@@ -336,7 +346,7 @@
     #vision-fittyfitty div img, #mission-fittyfitty div img, #vaerdier-fittyfitty div img{
         width: 80%;
         aspect-ratio: 3/2;
-        object-fit: contain;
+        object-fit: cover;
     }
     .vmv-billede2{
         display: none;
@@ -347,6 +357,9 @@
     #mission-fittyfitty section{
         padding-top: 3rem;
         padding-bottom: 0rem;
+    }
+    #mission-fittyfitty section div{
+        display: block;
     }
     .vmv-billede3{
         display: block;
