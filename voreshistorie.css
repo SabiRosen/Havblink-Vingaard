@@ -140,6 +140,7 @@
 }
 
 .knap2, .knap3{
+    width: 40%;
     font-size: 1rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -354,8 +355,13 @@
         display: block;
     }
     .vmv-billede3{
-        display: block;
+        display: block; 
     }
+    #mission-fittyfitty section div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     .knap2:hover, .knap3:hover{
         transition: none;
         transform: none;

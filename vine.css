@@ -9,23 +9,11 @@
 
 #sortering{
     display: flex;
-    justify-content: space-between;
+    gap: 2%;
     margin-top: 3%;
     text-align: left;
     margin-left: 13%;
-}
-
-#sortering ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 10%;
-}
-
-#sortering li{
-    font-family: 'UrbanistRegular';
-    font-size: 1.1rem;
-    
+    font-family: 'UrbanistMedium';
 }
 
 #sortering .dropdown-list{
@@ -34,52 +22,54 @@
     z-index: 8;
     border:#50320C solid 2px;
     border-radius: 5rem;
-    padding: 0.5rem 2.5rem;
+    padding: 0.2rem 1rem;
     white-space: nowrap;
 }
 
-#sortering .dropdown-content{
+.dropdown-checkbox {
+    display: none;
+}
+  
+  
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1d8b9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    list-style: none;
-    padding: 0;
-    margin-top: 0.6rem;
-    margin-left: -2.5rem;
-    
-    
-}
-
-#sortering .dropdown-content li{
-    padding: 1rem 2rem;
-    text-align: left;
-    font-family: 'UrbanistRegular';
-    cursor: pointer;
-    font-size: 16px;
+    top: 110%;
+    left: 0;
+    background-color: rgb(241, 216, 185, 0.5);
+    border: 1px solid #f1d8b9;
+    width: max-content;
+    padding: 1rem;
+    margin-left: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 8;
+    justify-content: space-between;
+    gap: 5%;
 }
 
-#sortering .dropdown-content li a{
-    text-decoration: none;
+.dropdown-content a{
     color: #50320C;
-    display: block;
     font-family: 'UrbanistRegular';
-}
-#sortering .dropdown-content li a:hover{
-    font-weight: bold;
-}
-
-#sortering .dropdown-content li:hover{
-    background-color: #f1d8b9;
     text-decoration: none;
-    color: #50320C;
+    padding-left: 3%;
+    line-height: 2rem;
+}
+  
+.dropdown-checkbox:checked + .dropdown-toggle + .dropdown-content {
+    display: flex;
+    flex-direction: column;
+
 }
 
-#sortering .dropdown-list:hover .dropdown-content{
+.dropdown-toggle {
     display: block;
+    cursor: pointer;
+    padding: 1rem 0;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #50320C;
+    background: none;
+    border: none;
 }
 
 /*----------------------------------------------------------------*/
@@ -398,8 +388,11 @@
     #sortering{
         margin-left: 4%;
     }
-    #sortering li{
-        font-size: 0.8rem;
+    #sortering .dropdown-list{
+        padding: 0.1rem 0.5rem;
+    }
+    .dropdown-content a{
+        line-height: 3rem;
     }
     .vin-container{
         padding-left: 2rem;
