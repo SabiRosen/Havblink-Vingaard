@@ -215,7 +215,7 @@
     overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
-    scrollbar-width: medium;
+    scrollbar-width: thin;
     scrollbar-color: #50320C #f1d8b9;
     overflow-y: visible;
 }
