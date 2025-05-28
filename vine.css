@@ -448,8 +448,6 @@
     }
     #anmeldelser-container{
         gap: 1rem;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
         padding-top: 2%;
         gap: 10%;
     }

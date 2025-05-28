@@ -121,7 +121,7 @@ nav .dropdown-content li a:hover {
     width: 55%;
     height: 80vh;
     background-color: rgb(241, 216, 185, 80%); 
-    z-index: 8; 
+    z-index: 10; 
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
 
