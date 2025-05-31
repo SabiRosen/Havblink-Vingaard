@@ -285,6 +285,12 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    .knap2, .knap3{
+        width: 50%;
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 /*------------------Mobil------------------*/
@@ -328,6 +334,12 @@
         width: 100%;
         padding-left: 2rem;
         padding-right: 2rem;
+        align-items: center;
+    }
+    .fittyfitty section h2, .fittyfitty2 section h2, .fittyfitty3 div h2, #vision-fittyfitty section h2, #mission-fittyfitty section h2, #vaerdier-fittyfitty section h2{
+        text-align: center;
+        font-size: 1.8rem;
+       
     }
     .fittyfitty img, .fittyfitty2 img, .fittyfitty3 img{
         width: 100%;
@@ -370,6 +382,12 @@
         justify-content: center;
         align-items: center;
       }
+    .knap2, .knap3{
+        width: 50%;
+        font-size: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     .knap2:hover, .knap3:hover{
         transition: none;
         transform: none;
@@ -388,4 +406,11 @@
     .knap3 a:hover{
         color:#F1D8B9;
     }
+}
+
+@media screen and (max-width: 500px) {
+   .knap2, .knap3{
+        width: 60%;
+    }
+    
 }
